@@ -1,5 +1,6 @@
 package me.zacklukem;
 
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -41,11 +42,12 @@ public class RedDevPlugin extends JavaPlugin {
 			player.sendMessage("Server name is now set to " + args[0] + ".");
 			return true;
 		} else if (cmd.getName().equalsIgnoreCase("trade")) {
-			if (player.getItemInHand() == new ItemStack(Material.DIAMOND)) {
-				player.getInventory().remove(new ItemStack(Material.DIAMOND));
-				player.getInventory().addItem(new ItemStack(Material.EMERALD));
+			if (player.getInventory().contains(Material.DIAMOND)) {
+				player.getInventory().remove(new ItemStack(Material.DIAMOND, 5));
+				player.getInventory().addItem(new ItemStack(Material.EMERALD, 5));
+				player.sendMessage(ChatColor.GREEN + "Nice Trading With You!");
 			} else {
-				player.sendMessage("Please Hold Out Diamonds and try again.");
+				player.sendMessage(ChatColor.RED + "You Dont Have Enough Diamonds!");
 			}
 			return true;
 		}
