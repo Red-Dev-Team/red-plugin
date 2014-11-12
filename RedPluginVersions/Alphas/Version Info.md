@@ -4,6 +4,11 @@ Current Version: Alpha 0.5
 
 Latest Uncompiled Version: Alpha 0.6
 
+Updates in 0.5:
+
+-added /trade<br>
+-Minor bug fixes
+
 To Be Updated in 0.6:
 
 -fixing /trade bug
