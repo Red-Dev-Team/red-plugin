@@ -8,3 +8,6 @@ commands:
      server-name:
           description: Name the server
           usage: /<command>
+     trade:
+          description: Trade diamonds for emeralds
+          usage: /<command>

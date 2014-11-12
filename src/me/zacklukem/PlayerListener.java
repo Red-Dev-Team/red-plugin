@@ -4,7 +4,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerLoginEvent;
+import org.bukkit.event.player.PlayerJoinEvent;
 
 public class PlayerListener implements Listener {
 	
@@ -22,10 +22,13 @@ public class PlayerListener implements Listener {
 	}  Removed-Keep For Reference*/
 	
 	@EventHandler
-	public void onPlayerLogin(PlayerLoginEvent e) {
+	public void onPlayerLogin(PlayerJoinEvent e) {
 		Player player = e.getPlayer();
 		
-		player.sendMessage(ChatColor.GREEN + "Welcome to The Red Creeper!");
+		if (player.hasPlayedBefore() == false) {
+			e.setJoinMessage(ChatColor.AQUA + "Welcome, " + player.getName() + " to the server!");
+		}
 	}
+	 
 	
 }

@@ -1,8 +1,10 @@
 package me.zacklukem;
 
+import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class RedDevPlugin extends JavaPlugin {
@@ -37,6 +39,14 @@ public class RedDevPlugin extends JavaPlugin {
 			return true;
 		} else if (cmd.getName().equalsIgnoreCase("server-name")) {
 			player.sendMessage("Server name is now set to " + args[0] + ".");
+			return true;
+		} else if (cmd.getName().equalsIgnoreCase("trade")) {
+			if (player.getItemInHand() == new ItemStack(Material.DIAMOND)) {
+				player.getInventory().remove(new ItemStack(Material.DIAMOND));
+				player.getInventory().addItem(new ItemStack(Material.EMERALD));
+			} else {
+				player.sendMessage("Please Hold Out Diamonds and try again.");
+			}
 			return true;
 		}
 		
