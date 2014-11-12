@@ -9,3 +9,6 @@ Updates in version 0.3:
 -removed thrown egg event
 <br>
 -added /server-name \<server name\>
+
+
+For update requests, please email me at zachary.reddev@gmail.com
