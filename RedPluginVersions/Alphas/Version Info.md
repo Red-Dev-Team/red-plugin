@@ -8,4 +8,4 @@ Updates in version 0.3:
 
 -removed thrown egg event
 <br>
--added /server-name <server name>
+-added /server-name \<server name\>
