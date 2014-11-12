@@ -7,6 +7,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class RedDevPlugin extends JavaPlugin {
 	
+	public String serverName;
+	
 	public boolean isEnabled = false;
 	
 	//executes on enable
@@ -33,8 +35,9 @@ public class RedDevPlugin extends JavaPlugin {
 				player.sendMessage("Red Dev Plugin Is Not Enabled");
 			}
 			return true;
-		}else if (cmd.getName().equalsIgnoreCase("reddevtest")) {
-			getLogger().info("Red Dev Test Executed, Is Sender a Player?");
+		} else if (cmd.getName().equalsIgnoreCase("server-name")) {
+			player.sendMessage("Server name is now set to " + args[0] + ".");
+			return true;
 		}
 		
 		return false;

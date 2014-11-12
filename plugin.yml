@@ -5,3 +5,6 @@ commands:
      reddevtest:
           description: Use To Test If RedDevPlugin is enabled or not.
           usage: /<command>
+     server-name:
+          description: Name the server
+          usage: /<command>
