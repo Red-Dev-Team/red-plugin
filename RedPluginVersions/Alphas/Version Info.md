@@ -10,12 +10,12 @@ Updates in version 0.4:
 
 To Be Updated in 0.5:
 
--minor bug fixes
+-minor bug fixes<br>
 -adding trading
 
-To Be Updated in Release 1.0:
--adding economy
--adding guilds
+To Be Updated in Release 1.0:<br>
+-adding economy<br>
+-adding guilds<br>
 -adding tnt protection
 
 I apologize for the bug with versions stating that all downloads were release 1.0 To Be fixed in 0.5
