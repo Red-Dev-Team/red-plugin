@@ -43,8 +43,8 @@ public class RedDevPlugin extends JavaPlugin {
 			return true;
 		} else if (cmd.getName().equalsIgnoreCase("trade")) {
 			if (player.getInventory().contains(Material.DIAMOND)) {
-				player.getInventory().remove(new ItemStack(Material.DIAMOND, 5));
-				player.getInventory().addItem(new ItemStack(Material.EMERALD, 5));
+				player.getInventory().remove(Material.DIAMOND);
+				player.getInventory().addItem(new ItemStack(Material.EMERALD, 1));
 				player.sendMessage(ChatColor.GREEN + "Nice Trading With You!");
 			} else {
 				player.sendMessage(ChatColor.RED + "You Dont Have Enough Diamonds!");

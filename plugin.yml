@@ -1,6 +1,6 @@
 name: RedDevPlugin
 main: me.zacklukem.RedDevPlugin
-version: 0.5
+version: 0.6
 commands:
      reddevtest:
           description: Use To Test If RedDevPlugin is enabled or not.
