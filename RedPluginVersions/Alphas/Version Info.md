@@ -10,7 +10,7 @@ Updates in 0.6:
 
 To Be Updated in 0.7:
 
--preparing for guilds
+-preparing for guilds<br>
 -other preps for 1.0
 
 To Be Updated in Release 1.0:<br>
