@@ -4,14 +4,14 @@ Current Version: Alpha 0.5
 
 Latest Uncompiled Version: Alpha 0.6
 
-Updates in 0.5:
-
--added /trade<br>
--Minor bug fixes
-
-To Be Updated in 0.6:
+Updates in 0.6:
 
 -fixing /trade bug
+
+To Be Updated in 0.7:
+
+-preparing for guilds
+-other preps for 1.0
 
 To Be Updated in Release 1.0:<br>
 -adding economy<br>
